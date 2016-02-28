@@ -12,7 +12,6 @@ import turtle, math
 
 #Convert from Python's coordinates to standard coordinates
 def convertX(x, width):
-    print("Coucou")
     return x - (width/2)
 
 #Convert from Python's coordinates to standard coordinates
