@@ -2,7 +2,7 @@
 #  Description: Draw the US flag
 #  Student's Name: Minh-Tri Ho
 #  Student's UT EID: mh47723
-#  Course Name: CS 313E 
+#  Course Name: CS 313E
 #  Unique Number: 50940
 #
 #  Date Created: 02/08/16
@@ -12,9 +12,10 @@ import turtle, math
 
 #Convert from Python's coordinates to standard coordinates
 def convertX(x, width):
+    print("Coucou")
     return x - (width/2)
 
-#Convert from Python's coordinates to standard coordinates    
+#Convert from Python's coordinates to standard coordinates
 def convertY(y, height):
     return - y + (height/2)
 
@@ -22,7 +23,7 @@ def convertY(y, height):
 def drawRectangle(ttl, x, y, height, width):
     #Setting up the color
     ttl.color("black")
-    
+
     #Setting up the cursor
     ttl.setheading(0)
     ttl.penup()
@@ -73,7 +74,7 @@ def drawStar(ttl, x, y, height):
     #length
     #l = r/3
     l = math.cos(18*math.pi/360)*r/(2*(1+math.cos(72*math.pi/360)))
-    
+
     #position the turtle
     ttl.penup()
     ttl.setposition(x, y)
@@ -102,7 +103,7 @@ def drawStar(ttl, x, y, height):
     ttl.forward(l)
     ttl.right(72)
     ttl.forward(l)
-    
+
     ttl.end_fill()
 
 def main():
@@ -139,5 +140,5 @@ def main():
     drawRectangle(ttl, convertX(0, fly), convertY(0, hoist), hoist, fly)
 
     ttl.hideturtle()
-    
+
 main()
